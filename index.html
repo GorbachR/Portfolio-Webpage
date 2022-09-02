@@ -1,12 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Portfolio Page</title>
+  </head>
+  <body>
+    <header class="sticky top-0 w-full shadow-md bg-white z-50">
+      <nav class="max-w-2xl mr-0 ml-auto py-4" id="navbar">
+        <ul
+          class="flex justify-evenly [&>*]:text-blue-900 [&>*:hover]:opacity-75"
+        >
+          <li>
+            <a href="#">About me</a>
+          </li>
+          <li>
+            <a href="#">Career Path</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-wrapper [&>*]:px-4 [&>*]:py-6">
+      <div class="w-full" id="welcome-section">
+        <div class="flex justify-between items-center flex-wrap w-0 min-w-centeredContent mx-auto">
+          <div>
+            <h1 class="break-words">Raphael Gorbach</h1>
+            <p class="max-w-30ch">
+              An aspiring Web Developer who is always open to learn new things!
+            </p>
+            <button class="bg-blue-900 text-white" type="button">
+              Contact me!
+            </button>
+          </div>
+          <div class="">
+            <img
+              class="max-w-lg"
+              src="./img/welcome-section/portrait.png"
+              alt=""
+            />
+          </div>
+
+        </div>
+      </div>
+      <div class="h-20 bg-[url(./img/welcome-section/bottom_svg.svg)] bg-no-repeat bg-cover"></div>
+      <div class="w-full bg-blue-50" id="about_me">
+        <div class="w-0 min-w-centeredContent mx-auto">
+        <h2>About me</h2>
+        <p class="max-w-45ch">
+          For the last 3 months i have dedicated my life to learn about Web
+          Development to get my career started. I still have a long way to go,
+          but I’m optimistic with hard work and dedication I’m going to get
+          there!
+        </p>
+        <div
+          class="grid grid-cols-1_fit md:grid-cols-2_fit justify-between gap-4 [&>div>p]:inline-block [&>div>img]:max-w-icon1"
+        >
+          <div>
+            <img src="./img/austria-flag-emoji.svg" alt="" />
+            <p>Based in Austria</p>
+          </div>
+          <div>
+            <img src="./img/man-student-emoji-by-twitter 1.svg" alt="" />
+            <p>HTL Graduate</p>
+          </div>
+          <div>
+            <img src="./img/desktop-computer_1f5a5-fe0f 1.svg" alt="" />
+            <p>Tech Enthusiast</p>
+          </div>
+          <div>
+            <img src="./img/framed-picture_1f5bc-fe0f 1.svg" alt="" />
+            <p>Also interested in Webdesign</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="bg-blue-50" id="career_path">
+        <h2>Career Path</h2>
+        <div class="h-16 flex">
+          <div
+            class="max-w-16 h-auto border-4 border-blue-400 rounded-full inline-block align-middle"
+          >
+            <img class="h-auto w-full" src="./img/school 1.svg" alt="" />
+          </div>
+          <h3 class="inline-block align-middle">2005 - 2013</h3>
+        </div>
+        <div class="w-0 border-l-4 border-blue-400 relative left-8">
+          <p>Elementary and Middle School Schemerlhöhe/ Laßnitzhöhe</p>
+        </div>
+      </div>
+
+      <div id="projects">
+        <div class="w-0 min-w-centeredContent mx-auto">
+        <h2 class="inline-block align-middle">Projects</h2>
+        <img
+          class="max-w-icon2"
+          src="./img/programming-code-signs-svgrepo-com 1.svg"
+          alt=""
+        />
+
+        <div class="grid grid-cols-1_350 md:grid-cols-2_350 xl:grid-cols-3_350 justify-between gap-8 [&>div]:mx-auto" id="projectsContainer">
+          <div class="project-tile">
+
+            <a href=""><img src="./img/projects/tribute_page.png" alt="" /></a>
+
+            <h3>Tribute Page</h3>
+            <p>
+              Tools:
+              <img src="./img/projects/HTML.svg" alt="" />
+              <img src="./img/projects/CSS.svg" alt="" />
+            </p>
+
+          </div>
+
+          <div class="project-tile">
+
+            <a href=""><img src="./img/projects/survey_form.png" alt="" /></a>
+
+            <h3>Survey Form</h3>
+            <p>
+              Tools:
+              <img src="./img/projects/HTML.svg" alt="" />
+              <img src="./img/projects/CSS.svg" alt="" />
+            </p>
+
+          </div>
+
+          <div class="project-tile">
+
+            <a href=""><img src="./img/projects/landing_page.png" alt="" /></a>
+
+            <h3>Landing Page</h3>
+            <p>
+              Tools:
+              <img src="./img/projects/HTML.svg" alt="" />
+              <img src="./img/projects/CSS.svg" alt="" />
+            </p>
+
+          </div>
+
+          <div class="project-tile">
+
+            <a href=""><img src="./img/projects/tech_doc.png" alt="" /></a>
+
+            <h3>Technical Doc. Page</h3>
+            <p>
+              Tools:
+              <img src="./img/projects/HTML.svg" alt="" />
+              <img src="./img/projects/CSS.svg" alt="" />
+              <img src="./img/projects/Bootstap.svg" alt="" />
+            </p>
+
+          </div>
+          <h3 class="my-auto">More to come...</h3>
+        </div>
+
+        <p class="max-w-30ch">
+          Also check out how I solved the FreeCodeCamp
+          <img class="max-w-icon3" src="./img/projects/JS.svg" alt="" />
+          challenges on my
+          <a href="https://github.com/GorbachR">
+          <img class="max-w-icon3" src="./img/projects/Github.svg" alt="" />
+            </a>
+          page!
+        </p>
+        </div>
+      </div>
+
+      <div class="bg-blue-900" id="footer">
+        <form class="flex flex-col gap-5 max-w-2xl mx-auto" action="">
+          <h3 class="text-white">Contact me</h3>
+          <div class="flex gap-5 w-full [&>input]:w-6/12">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <input type="email" placeholder="Your E-Mail" />
+          <textarea class="h-48 resize-none" placeholder="Inquiry"></textarea>
+          <div>
+            <button class="bg-white w-3/12 min-w-fit" type="submit">
+              Send
+            </button>
+            <img class="max-w-icon1" src="./img/footer/send_1.svg" alt="" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

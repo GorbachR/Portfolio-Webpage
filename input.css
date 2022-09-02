@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*, *::before, *::after {
+    /*Debugging */
+    /*outline: 1px solid red; */
+    @apply box-border;
+}
+
+body {
+    @apply text-2xl;
+    @apply text-slate-800;
+    @apply m-0;
+    @apply p-0;
+}
+
+h1, h2, h3, h4 {
+    @apply font-Poppins;
+    @apply text-blue-900;
+}
+
+h1 {
+    @apply text-7xl;
+    @apply font-black;
+}
+
+h2 {
+    @apply text-5xl;
+    @apply font-bold;
+}
+
+h3 {
+    @apply text-4xl;
+    @apply font-medium;
+}
+
+nav a {
+    @apply font-semibold;
+}
+
+img {
+    @apply inline-block;
+    @apply w-full;
+    @apply h-auto;
+}
+
+input, textarea, button {
+    @apply rounded-lg;
+    @apply p-3;
+}
+
+.project-tile p img {
+    @apply h-full;
+    @apply w-auto;
+    @apply max-w-none;
+    @apply max-h-icon3;
+}
+
+.project-tile a img {
+    @apply rounded-2xl;
+    @apply max-w-sm;
+    @apply border;
+}
+
