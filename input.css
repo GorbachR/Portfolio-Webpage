@@ -1,69 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-*, *::before, *::after {
-    /*Debugging */
-    /*outline: 1px solid red; */
-    @apply box-border;
+*,
+*::before,
+*::after {
+  /*Debugging */
+  /*outline: 1px solid red; */
+  @apply box-border;
 }
 
 body {
-    @apply text-2xl;
-    @apply text-slate-800;
-    @apply m-0;
-    @apply p-0;
+  @apply text-lg md:text-xl lg:text-2xl text-slate-800 m-0 p-0 ;
+  
 }
 
-h1, h2, h3, h4 {
-    @apply font-Poppins;
-    @apply text-blue-900;
+h1,
+h2,
+h3,
+h4 {
+  @apply font-Poppins text-blue-900;
 }
 
 h1 {
-    @apply text-7xl;
-    @apply font-black;
+  @apply text-5xl md:text-6xl lg:text-7xl font-black mb-8;
 }
 
 h2 {
-    @apply text-5xl;
-    @apply font-bold;
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-8;
 }
 
 h3 {
-    @apply text-4xl;
-    @apply font-medium;
+  @apply text-2xl md:text-3xl lg:text-4xl font-medium;
+}
+
+p {
+  @apply mb-8;
 }
 
 nav a {
-    @apply font-semibold;
+  @apply font-semibold;
 }
 
 img {
-    @apply inline-block;
-    @apply w-full;
-    @apply h-auto;
+  @apply inline-block w-full h-auto;
 }
 
-input, textarea, button {
-    @apply rounded-lg;
-    @apply p-3;
+input,
+textarea,
+button {
+  @apply rounded-lg p-3;
+}
+
+.about-me-box {
+  @apply flex flex-col items-center justify-center rounded-sm shadow-xl 
+  transition duration-500 max-w-[13rem] w-full h-52 bg-[#F7FAFF] hover:bg-blue-100 
+  hover:transition hover:duration-500;
 }
 
 .project-tile p img {
-    @apply h-full;
-    @apply w-auto;
-    @apply max-w-none;
-    @apply max-h-icon3;
+  @apply h-full w-auto max-w-none max-h-logos_projects;
 }
 
-.project-tile a img {
-    @apply rounded-2xl;
-    @apply max-w-sm;
-    @apply border;
+.project-img {
+  @apply relative z-30 
+  after:absolute after:top-0 after:left-0 after:h-full after:w-full 
+  after:rounded-2xl after:border after:transition after:duration-500
+  after:group-hover:bg-gray-900 after:group-hover:bg-opacity-40 
+  after:group-hover:bg-blend-multiply after:group-hover:transition 
+  after:group-hover:duration-500;
 }
 
+.project-img-text {
+ @apply invisible absolute top-1/2 left-1/2 z-20 -translate-x-1/2 
+ -translate-y-1/2 text-center text-white opacity-0 transition-all 
+ duration-500 group-hover:visible group-hover:opacity-100 
+ group-hover:transition-all group-hover:duration-500
+}

@@ -13,27 +13,31 @@ module.exports = {
       },
 
       maxWidth: {
-        icon1: '5rem',
-        icon2: '6rem',
-        icon3: '3rem',
+        icons: '2.5rem',
         '30ch': '30ch',
         '45ch': '45ch',
       },
 
-      minWidth: {
-        'centeredContent': '80%'
-      },
-
       maxHeight: {
-        icon3: '3rem',
+        logos_projects: '3rem',
       },
 
       gridTemplateColumns: {
-        '1_350': 'minmax(0, 350px)',
-        '2_350': 'repeat(2, minmax(0, 350px))',
-        '3_350': 'repeat(3, minmax(0, 350px))',
-        '1_fit': 'minmax(0, max-content)',
-        '2_fit': 'repeat(2, minmax(0, max-content))'
+        '1_350': 'minmax(0, 22rem)',
+        '2_350': 'repeat(2, minmax(0, 22rem))',
+        '3_350': 'repeat(3, minmax(0, 22rem))',
+      },
+
+      keyframes: {
+        'text-transition': {
+          '0%': {content: "''"},
+          '50%': {color: 'black'},
+          '100%': {content: 'View on CodePen'}
+        }
+      },
+
+      animation: {
+        'text-transition': 'text-transition 1s ease'
       }
   
     },
