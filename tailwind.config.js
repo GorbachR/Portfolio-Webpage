@@ -4,44 +4,46 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["'Work Sans'", "sans-serif"],
-        Poppins: ["Poppins", "sans-serif"]
+        Poppins: ["Poppins", "sans-serif"],
       },
-
-      colors: {
-        bluehover: '#0000'
+      /*
+      screens: {
+        sm: "40rem",
+        md: "48rem",
+        lg: "64rem",
+        xl: "80rem",
+        "2xl": "96rem",
       },
-
+*/
       maxWidth: {
-        icons: '2.5rem',
-        '30ch': '30ch',
-        '45ch': '45ch',
+        1: "0.25rem",
+        2: "0.5rem",
+        3: "0.75rem",
+        4: "1rem",
+        5: "1.25rem",
+        6: "1.5rem",
+        7: "1.75rem",
+        8: "2rem",
+        9: "2.25rem",
+        10: "2.5rem",
+        11: "2.75rem",
+        12: "3rem",
+        13: "3.25rem",
+        14: "3.5rem",
+        15: "3.75rem",
+        16: "4rem",
+        "30ch": "30ch",
+        "45ch": "45ch",
       },
 
       maxHeight: {
-        logos_projects: '3rem',
+        logos_projects: "2.5rem",
       },
 
       gridTemplateColumns: {
-        '1_350': 'minmax(0, 22rem)',
-        '2_350': 'repeat(2, minmax(0, 22rem))',
-        '3_350': 'repeat(3, minmax(0, 22rem))',
+        implicit_22: "repeat(auto-fit, minmax(min(22rem, 100%), 1fr))",
       },
-
-      keyframes: {
-        'text-transition': {
-          '0%': {content: "''"},
-          '50%': {color: 'black'},
-          '100%': {content: 'View on CodePen'}
-        }
-      },
-
-      animation: {
-        'text-transition': 'text-transition 1s ease'
-      }
-  
     },
-
   },
   plugins: [],
-}
+};
